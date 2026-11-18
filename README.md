@@ -50,6 +50,7 @@ technova-maria/
 
 ### ⏳ Sprint 2: Estilização & Responsividade (CSS3)
 * *Em desenvolvimento.*
+<img width="1000" height="280" alt="showing confirmação img" src="https://github.com/user-attachments/assets/6a3508c0-0935-49c0-8eaa-8cf9eb58e065" />
 
 ---
 
