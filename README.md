@@ -8,8 +8,8 @@ Projeto desenvolvido para a Avaliação Somativa de Desenvolvimento Front-End (*
 
 ## 🔗 Links Oficiais do Projeto
 
-* **Repositório no GitHub:** `https://github.com`
-* **Portal Online (GitHub Pages):** `https://github.io`
+* **Repositório no GitHub:** https://github.com/madumendes21/technova-solutions
+* **Portal Online (GitHub Pages):** https://madumendes21.github.io/technova-solutions/
 
 *(Nota: Substitua `SEU-USUARIO` pelo seu nome de usuário do GitHub após publicar).*
 
