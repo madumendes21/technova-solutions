@@ -63,6 +63,15 @@ technova-maria/
 <img width="1000" height="280" alt="showing confirmação img" src="https://github.com/user-attachments/assets/1e634327-52b4-4b26-a6a3-fe101626ecfd" />
 
 
+## ✅ Auditoria e Validação W3C (Zero Erros)
+
+### Validação HTML5
+
+
+
+### Validação CSS3 + SVG
+
+
 
 
 
