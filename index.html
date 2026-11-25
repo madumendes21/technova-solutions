@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TechNova Solutions: Soluções corporativas em Computação em Nuvem, Inteligência Artificial e Cibersegurança para impulsionar o seu negócio.">
     <title>TechNova Solutions | Cloud, IA e Cibersegurança</title>
+    <!-- LINK DO CSS ADICIONADO AQUI -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="topo">
 
@@ -12,7 +14,13 @@
     <header>
         <div class="logo">
             <a href="#topo" aria-label="Página inicial da TechNova Solutions">
-                <strong>TechNova</strong> Solutions
+                <!-- SVG INLINE DO LOGOTIPO -->
+                <svg class="logo-svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                <span><strong>TechNova</strong> Solutions</span>
             </a>
         </div>
         <nav aria-label="Menu Principal">
@@ -31,9 +39,11 @@
 
         <!-- Seção 2: Hero Section -->
         <section id="inicio" class="hero">
-            <h1>Inovação Tecnológica em Nuvem, Inteligência Artificial e Cibersegurança</h1>
-            <p>Acelere a transformação digital da sua empresa com infraestrutura escalável, automação inteligente e proteção de dados de ponta a ponta.</p>
-            <a href="#contato" class="btn-cta">Solicitar Consultoria Gratuita</a>
+            <div class="hero-texto">
+                <h1>Inovação Tecnológica em Nuvem, Inteligência Artificial e Cibersegurança</h1>
+                <p>Acelere a transformação digital da sua empresa com infraestrutura escalável, automação inteligente e proteção de dados de ponta a ponta.</p>
+                <a href="#contato" class="btn-cta">Solicitar Consultoria Gratuita</a>
+            </div>
 
             <div class="destaques-galeria">
                 <figure>
@@ -54,18 +64,18 @@
         <!-- Seção 3: Sobre Nós & Equipe -->
         <section id="sobre">
             <h2>Sobre a TechNova Solutions</h2>
-            <p>Fundada por especialistas apaixonados por engenharia de software, a <strong>TechNova Solutions</strong> nasceu com o propósito de democratizar o acesso a tecnologias de alto desempenho. Atuamos como parceiros estratégicos de empresas que buscam <em>eficiência operacional</em> e <em>segurança digital</em>.</p>
+            <p class="intro-texto">Fundada por especialistas apaixonados por engenharia de software, a <strong>TechNova Solutions</strong> nasceu com o propósito de democratizar o acesso a tecnologias de alto desempenho. Atuamos como parceiros estratégicos de empresas que buscam <em>eficiência operacional</em> e <em>segurança digital</em>.</p>
 
             <div class="mvv-container">
-                <article>
+                <article class="card">
                     <h3>Missão</h3>
                     <p>Entregar soluções tecnológicas resilientes e inteligentes que resolvam problemas complexos de negócios com agilidade.</p>
                 </article>
-                <article>
+                <article class="card">
                     <h3>Visão</h3>
                     <p>Ser referência nacional em <strong>arquitetura em nuvem</strong> e <strong>segurança cibernética</strong> até 2030.</p>
                 </article>
-                <article>
+                <article class="card">
                     <h3>Valores</h3>
                     <p>Transparência ética, inovação contínua, foco no cliente e excelência técnica em cada linha de código.</p>
                 </article>
@@ -73,22 +83,22 @@
 
             <h3>Nossa Equipe de Especialistas</h3>
             <div class="equipe-grade">
-                <article>
+                <article class="card">
                     <img src="img/equipe1.webp" alt="Foto de Mariana Silva, CEO e Arquiteta de Nuvem" width="250" height="250">
                     <h4>Mariana Silva</h4>
-                    <p><strong>CEO &amp; Cloud Architect</strong></p>
+                    <p class="cargo"><strong>CEO &amp; Cloud Architect</strong></p>
                     <p>Especialista em infraestrutura AWS e Azure com mais de 12 anos de experiência em sistemas distribuídos.</p>
                 </article>
-                <article>
+                <article class="card">
                     <img src="img/equipe2.webp" alt="Foto de Rafael Costa, Líder de Inteligência Artificial" width="250" height="250">
                     <h4>Rafael Costa</h4>
-                    <p><strong>Head de Inteligência Artificial</strong></p>
+                    <p class="cargo"><strong>Head de Inteligência Artificial</strong></p>
                     <p>Mestre em Ciência de Dados, lidera o desenvolvimento de modelos de Machine Learning e automação.</p>
                 </article>
-                <article>
+                <article class="card">
                     <img src="img/equipe3.webp" alt="Foto de Camila Mendes, Diretora de Cibersegurança" width="250" height="250">
                     <h4>Camila Mendes</h4>
-                    <p><strong>CISO &amp; Segurança da Informação</strong></p>
+                    <p class="cargo"><strong>CISO &amp; Segurança da Informação</strong></p>
                     <p>Certificada CISSP, atua na prevenção de incidentes, pentest e adequação rigorosa à LGPD.</p>
                 </article>
             </div>
@@ -99,214 +109,194 @@
             <h2>Catálogo de Serviços e Planos</h2>
 
             <div class="servicos-grade">
-                <article>
+                <article class="card">
+                    <!-- SVG INLINE SERVIÇO 1 -->
+                    <svg class="icone-servico" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                    </svg>
                     <h3>Computação em Nuvem (Cloud)</h3>
                     <p>Migração segura, gerenciamento de containers e otimização de custos em ambientes multi-cloud.</p>
                 </article>
-                <article>
+                <article class="card">
+                    <!-- SVG INLINE SERVIÇO 2 -->
+                    <svg class="icone-servico" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                        <rect x="9" y="9" width="6" height="6"></rect>
+                        <path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"></path>
+                    </svg>
                     <h3>Inteligência Artificial Corporativa</h3>
                     <p>Implementação de assistentes virtuais, análise preditiva de vendas e processamento de linguagem natural.</p>
                 </article>
-                <article>
+                <article class="card">
+                    <!-- SVG INLINE SERVIÇO 3 -->
+                    <svg class="icone-servico" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
                     <h3>Cibersegurança &amp; SOC</h3>
                     <p>Auditoria de vulnerabilidades, proteção contra ransomware e centro de operações de segurança 24/7.</p>
                 </article>
             </div>
 
             <!-- Tabela Comparativa de Planos com colspan e rowspan -->
-            <table>
-                <caption>Comparativo de Planos de Assinatura TechNova Solutions</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Recursos e Benefícios</th>
-                        <th scope="col">Plano Start</th>
-                        <th scope="col">Plano Business</th>
-                        <th scope="col">Plano Enterprise</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Armazenamento Cloud Dedicado</th>
-                        <td>500 GB</td>
-                        <td>2 TB</td>
-                        <td>Ilimitado</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Monitoramento de Segurança</th>
-                        <td rowspan="2">Horário Comercial (8x5)</td>
-                        <td>Contínuo (24x7)</td>
-                        <td>Contínuo (24x7) + SOC Dedicado</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Suporte Técnico Especializado</th>
-                        <td>Prioritário via Chat/E-mail</td>
-                        <td>Gerente de Conta Exclusivo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Módulo de IA Generativa</th>
-                        <td>Não incluso</td>
-                        <td colspan="2">Incluso com API dedicada e treinamento customizado</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th scope="row">Investimento Mensal</th>
-                        <td>R$ 1.490/mês</td>
-                        <td>R$ 3.890/mês</td>
-                        <td>Sob Consulta</td>
-                    </tr>
-                </tfoot>
-            </table>
+            <div class="tabela-wrapper">
+                <table>
+                    <caption>Comparativo de Planos de Assinatura TechNova Solutions</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Recursos e Benefícios</th>
+                            <th scope="col">Plano Start</th>
+                            <th scope="col">Plano Business</th>
+                            <th scope="col">Plano Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Armazenamento Cloud Dedicado</th>
+                            <td>500 GB</td>
+                            <td>2 TB</td>
+                            <td>Ilimitado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Monitoramento de Segurança</th>
+                            <td rowspan="2">Horário Comercial (8x5)</td>
+                            <td>Contínuo (24x7)</td>
+                            <td>Contínuo (24x7) + SOC Dedicado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Suporte Técnico Especializado</th>
+                            <td>Prioritário via Chat/E-mail</td>
+                            <td>Gerente de Conta Exclusivo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Módulo de IA Generativa</th>
+                            <td>Não incluso</td>
+                            <td colspan="2">Incluso com API dedicada e treinamento customizado</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Investimento Mensal</th>
+                            <td>R$ 1.490/mês</td>
+                            <td>R$ 3.890/mês</td>
+                            <td>Sob Consulta</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
         </section>
-
-        <!-- Seção 5: Blog & Central de Notícias -->
+                <!-- Seção 5: Blog & Central de Notícias -->
         <section id="blog">
-            <h2>Blog Tecnológico &amp; Insights</h2>
+            <h2>Blog &amp; Insights Tecnológicos</h2>
 
-            <div class="blog-filtros">
-                <label for="busca-blog">Pesquisar no blog:</label>
-                <input type="search" id="busca-blog" name="busca-blog" placeholder="Pesquisar artigos...">
-
-                <nav aria-label="Categorias do Blog">
-                    <ul>
-                        <li><a href="#blog">Todos</a></li>
-                        <li><a href="#blog">Cloud Computing</a></li>
-                        <li><a href="#blog">Inteligência Artificial</a></li>
-                        <li><a href="#blog">Cibersegurança</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="blog-artigos">
-                <article>
-                    <div class="capa-artigo">
-                        <img src="img/blog-seguranca.webp" alt="Ilustração sobre arquitetura Zero Trust" width="350" height="200">
+            <div class="blog-grade">
+                <article class="card blog-card">
+                    <div class="blog-img-container">
+                        <span class="badge">Cloud</span>
+                        <img src="img/blog-cloud.webp" alt="Servidores em nuvem com luzes azuis representando arquitetura moderna" width="350" height="200">
                     </div>
-                    <span>Cibersegurança</span>
-                    <p>Publicado em <time datetime="2026-10-15">15 de Outubro de 2026</time> por <strong>Camila Mendes</strong></p>
-                    <h3>Arquitetura Zero Trust: Por que confiar nunca deve ser o padrão</h3>
-                    <p>Entenda como a verificação contínua de identidade reduz drasticamente os riscos de vazamento de dados no trabalho híbrido.</p>
-                    <a href="#blog">Ler artigo completo</a>
+                    <div class="blog-conteudo">
+                        <h3>Como reduzir custos em ambientes Multi-Cloud em 2026</h3>
+                        <p>Descubra as melhores práticas de FinOps para otimizar recursos na AWS e Azure sem perder performance.</p>
+                        <a href="#contato" class="btn-leia">Ler artigo completo</a>
+                    </div>
                 </article>
 
-                <article>
-                    <div class="capa-artigo">
-                        <img src="img/blog-cloud.webp" alt="Gráficos de redução de custos em nuvem" width="350" height="200">
+                <article class="card blog-card">
+                    <div class="blog-img-container">
+                        <span class="badge">IA Generativa</span>
+                        <img src="img/blog-ia.webp" alt="Rede neural abstrata ilustrando inteligência artificial nos negócios" width="350" height="200">
                     </div>
-                    <span>Cloud Computing</span>
-                    <p>Publicado em <time datetime="2026-11-02">02 de Novembro de 2026</time> por <strong>Mariana Silva</strong></p>
-                    <h3>FinOps na Prática: Como reduzir em até 35% os gastos com nuvem</h3>
-                    <p>Descubra boas práticas de governança e dimensionamento automático de instâncias para evitar desperdícios financeiros.</p>
-                    <a href="#blog">Ler artigo completo</a>
+                    <div class="blog-conteudo">
+                        <h3>Agentes de IA no atendimento corporativo: guia prático</h3>
+                        <p>Veja como implementar modelos de linguagem treinados com os dados seguros da sua própria empresa.</p>
+                        <a href="#contato" class="btn-leia">Ler artigo completo</a>
+                    </div>
                 </article>
 
-                <article>
-                    <div class="capa-artigo">
-                        <img src="img/blog-ia.webp" alt="Robô e análise de dados corporativos" width="350" height="200">
+                <article class="card blog-card">
+                    <div class="blog-img-container">
+                        <span class="badge">Segurança</span>
+                        <img src="img/blog-seguranca.webp" alt="Cadeado digital em tela escura simbolizando proteção contra ataques" width="350" height="200">
                     </div>
-                    <span>Inteligência Artificial</span>
-                    <p>Publicado em <time datetime="2026-11-12">12 de Novembro de 2026</time> por <strong>Rafael Costa</strong></p>
-                    <h3>IA Generativa no Atendimento B2B: Casos reais de sucesso</h3>
-                    <p>Veja como empresas brasileiras estão integrando modelos de linguagem aos seus sistemas internos com total privacidade.</p>
-                    <a href="#blog">Ler artigo completo</a>
+                    <div class="blog-conteudo">
+                        <h3>Arquitetura Zero-Trust: por que sua empresa precisa adotar</h3>
+                        <p>Entenda como blindar acessos remotos e proteger dados sensíveis contra ataques de ransomware.</p>
+                        <a href="#contato" class="btn-leia">Ler artigo completo</a>
+                    </div>
                 </article>
             </div>
         </section>
 
-        <!-- Seção 6: Contato & Localização -->
+        <!-- Seção 6: Contato & Consultoria -->
         <section id="contato">
-            <h2>Entre em Contato Conosco</h2>
+            <h2>Fale com Nossos Especialistas</h2>
+            <p class="intro-texto">Preencha o formulário abaixo para agendar um diagnóstico técnico gratuito para a sua empresa.</p>
 
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Envie sua Mensagem Corporativa</legend>
-
-                    <div>
-                        <label for="nome">Nome Completo:</label>
-                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
-                    </div>
-
-                    <div>
-                        <label for="email">E-mail Institucional:</label>
-                        <input type="email" id="email" name="email" required placeholder="seu.nome@empresa.com.br">
-                    </div>
-
-                    <div>
-                        <label for="telefone">Telefone / WhatsApp:</label>
-                        <input type="tel" id="telefone" name="telefone" required placeholder="(11) 99999-9999">
-                    </div>
-
-                    <div>
-                        <label for="assunto">Assunto do Atendimento:</label>
-                        <select id="assunto" name="assunto" required>
-                            <option value="">Selecione uma opção...</option>
-                            <option value="cloud">Computação em Nuvem</option>
-                            <option value="ia">Inteligência Artificial</option>
-                            <option value="cyber">Cibersegurança</option>
-                            <option value="planos">Dúvidas sobre Planos</option>
-                            <option value="outros">Outros Assuntos</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label for="mensagem">Mensagem Detalhada:</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva o cenário ou necessidade da sua empresa..."></textarea>
-                    </div>
-
-                    <div>
-                        <input type="checkbox" id="aceite" name="aceite" required>
-                        <label for="aceite">Li e concordo com a Política de Privacidade e tratamento de dados (LGPD).</label>
-                    </div>
-
-                    <button type="submit">Enviar</button>
-                </fieldset>
-            </form>
-
-            <aside>
-                <h3>Informações Institucionais</h3>
-                <address>
-                    <strong>TechNova Solutions Ltda.</strong><br>
-                    Av. Paulista, 1578 - 14º Andar, Bela Vista<br>
-                    São Paulo - SP, CEP: 01310-200<br>
-                    E-mail: <a href="mailto:contato@technovasolutions.com.br">contato@technovasolutions.com.br</a><br>
-                    Telefone: <a href="tel:+551130004000">(11) 3000-4000</a>
-                </address>
-
-                <div class="mapa-container">
-                    <iframe 
-                        src="https://openstreetmap.org" 
-                        width="400" 
-                        height="250" 
-                        title="Mapa de localização da TechNova Solutions na Avenida Paulista">
-                    </iframe>
+            <form action="#" method="post" class="form-contato">
+                <div class="form-grupo">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required>
                 </div>
-            </aside>
+
+                <div class="form-grupo">
+                    <label for="email">E-mail Corporativo:</label>
+                    <input type="email" id="email" name="email" placeholder="joao@suaempresa.com.br" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="servico">Área de Interesse:</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione uma solução...</option>
+                        <option value="cloud">Computação em Nuvem (Cloud)</option>
+                        <option value="ia">Inteligência Artificial Corporativa</option>
+                        <option value="seguranca">Cibersegurança &amp; SOC</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensagem">Detalhes do Projeto:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte-nos brevemente sobre os desafios da sua infraestrutura..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-cta">Enviar Solicitação</button>
+            </form>
         </section>
 
     </main>
 
     <!-- Seção 7: Rodapé -->
     <footer>
-        <p>&copy; 2026 TechNova Solutions. Todos os direitos reservados.</p>
+        <div class="footer-conteudo">
+            <p>&copy; 2026 TechNova Solutions. Todos os direitos reservados.</p>
 
-        <nav aria-label="Links Úteis do Rodapé">
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contato">Política de Privacidade</a></li>
-            </ul>
-        </nav>
+            <!-- SVG INLINE REDES SOCIAIS -->
+            <div class="redes-sociais">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn da TechNova">
+                    <svg class="icone-social" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub da TechNova">
+                    <svg class="icone-social" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram da TechNova">
+                    <svg class="icone-social" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
 
-        <div class="redes-sociais">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> |
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="#topo" class="btn-topo">Voltar ao Topo ↑</a>
         </div>
-
-        <p><a href="#topo">↑ Voltar ao Topo</a></p>
     </footer>
 
 </body>
 </html>
+
