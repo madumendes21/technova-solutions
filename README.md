@@ -68,6 +68,11 @@ technova-maria/
 
 <img width="1000" height="304" alt="showing sprint2lima" src="https://github.com/user-attachments/assets/d08b9611-af44-407e-9f89-7a0d135fdfd6" />
 
+<img width="1000" height="485" alt="w3c-css" src="https://github.com/user-attachments/assets/d64a85f2-7197-4607-85f5-070377c54ec7" />
+
+
+
+
 
 
 
